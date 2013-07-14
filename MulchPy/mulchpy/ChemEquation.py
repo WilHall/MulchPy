@@ -3,19 +3,21 @@ from ChemCompound import ChemCompound
 
 class ChemEquation:
 	
-	def __init__(self, equationstr):
-		self.__str = equationstr
+	def __init__(self, equationstr=None):
 		self.__compounds = {
 			'left': [],
 			'right': []
 		}
 
-		self.setEquation(equationstr.replace(' ', ''))
+		if equationstr is not None:
+			self.setEquation(equationstr)
 
 	def __repr__(self):
 		return "<MulchPy.ChemEquation {0}>".format(self.__str)
 
 	def setEquation(self, equationstr):
+		self.__str = equationstr
+		equationstr = equationstr.replace(' ', '')
 
 		self.validateEquationStr()
 

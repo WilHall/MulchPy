@@ -8,37 +8,7 @@ class ChemCompound:
 
 	def __repr__(self):
 		return "<MulchPy.ChemCompound {0}>".format(self.__str)
-
-	def old_parseElements(self, compoundstr):
-		tokens = [str.lower() for str in compound_pattern.findall(compoundstr)]
-
-		lastElement = None
-
-		for token in tokens:
-			if not isInt(token): # Compound
-				if token in Elements: # One Element
-					lastElement = token
-					self.__elements.append({'element': Elements[token], 'quantity': 1})
-				else: # Multiple Elements
-					elementStr = ""
-					for letter in token:
-						if letter in Elements: # Single letter is an element
-							lastElement = letter
-							self.__elements.append({'element': Elements[letter], 'quantity': 1})
-						else: # Multiple letters make up an element
-							elementStr += letter
-							if elementStr in Elements: # If the collected letters make up an element
-								lastElement = elementStr
-								self.__elements.append({'element': Elements[elementStr], 'quantity': 1})
-								elementStr = ""
-			else: # Quantity
-				if lastElement:
-					# Set the quantity of the compound
-					self.__elements.append({'element': Elements[lastElement], 'quantity': int(token)})
-					lastElement = None
-				else:
-					raise InvalidEquation("Compound quantity found without associated compound")
-
+		
 	def parseElements(self, compoundstr):
 		tokens = element_pattern.findall(compoundstr)
 
