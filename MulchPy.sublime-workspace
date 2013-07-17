@@ -7,6 +7,38 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "MulchPy/mulchpy/ChemEquation.py",
+			"settings":
+			{
+				"buffer_size": 1422,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "MulchPy/mulchpy/ChemCompound.py",
+			"settings":
+			{
+				"buffer_size": 1379,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "MulchPy/mulchpy/utils.py",
+			"settings":
+			{
+				"buffer_size": 8731,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "MulchPy/mulchpy/ChemElement.py",
+			"settings":
+			{
+				"buffer_size": 295,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -71,8 +103,120 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "MulchPy/mulchpy/ChemEquation.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1422,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								629,
+								629
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 450.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "MulchPy/mulchpy/ChemCompound.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1379,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								225,
+								225
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "MulchPy/mulchpy/utils.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8731,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								262,
+								213
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "MulchPy/mulchpy/ChemElement.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 295,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],

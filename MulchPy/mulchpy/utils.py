@@ -15,8 +15,18 @@ def isInt(str):
 	except ValueError:
 		return False
 
-element_pattern = re.compile(r'([A-Z][a-z]*\d*)')
-quantity_pattern = re.compile(r'(\w+)(\d+)')
+def isElement(elem):
+	return elem.lower() in Elements
+
+def getElement(elem):
+	return Elements[elem.lower()]
+
+# Parsing a piece of a compound into elements w/o parenthesis
+ungrouped_pattern = re.compile(r'(\d?)+([A-Z][a-z]?)(\d*)')
+
+# Parsing a compound into elements with parenthesis
+grouped_pattern = re.compile(r'(.*?)(?:\()(.*?)(?:\))(\d?)')
+
 
 Elements = {
 'h': ChemElement(
