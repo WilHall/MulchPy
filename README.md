@@ -6,7 +6,7 @@ The Mulch Chemistry Stoichiometry C++ Library, ported to Python. Mulch can be fo
 
 ###How To Use
 
-MulchPy works almost identically to Mulch. Simply create a new ```ChemEquation``` object and supply the chemicla equation as a string:
+MulchPy works almost identically to Mulch. Simply create a new ```ChemEquation``` object and supply the chemical equation as a string:
 
 ```
 from mulchpy import ChemEquation
@@ -43,4 +43,4 @@ The ```getCompoundData()``` method returns a list of ```ChemCompound``` objects,
  * ```getCompoundString()``` - Returns the compound string for this ```ChemCompound``` instance
  * ```getElementSymbols()``` - Returns a list of element symbols contained in the compound
  * ```getElementNames()``` - Returns a list of element names contained in the compound
- * ```getElementData()``` - Returns a list of tuples in the form of ```(ChemElement, quantity)``` describing the compound. Each ```ChemElement``` object has attributes for Element Name (```name```), Element Symbol (```symbol```), Stomic Number(```an```), and Atomic Mass (```ma```).
+ * ```getElementData()``` - Returns a list of ChemElement objects describing the compound. Each ```ChemElement``` object has attributes for Element Name (```name```), Element Symbol (```symbol```), Atomic Number(```an```), Atomic Mass (```ma```), and the Quantity of the element in the compound (```quantity```).
