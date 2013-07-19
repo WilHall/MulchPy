@@ -2,9 +2,8 @@ from utils import Elements, InvalidCompound, isInt, isElement, getElement, ungro
 from ChemElement import ChemElement
 
 class ChemCompound:
-	def __init__(self, compoundstr, quantity=1):
+	def __init__(self, compoundstr):
 		self.__str = compoundstr
-		self.__quantity = quantity
 		self.__elements = []
 		self.parseElements(compoundstr)
 
@@ -85,3 +84,9 @@ class ChemCompound:
 
 	def getElementData(self):
 		return self.__elements
+
+	def getMolarMass(self):
+		mass = 0
+		for element in self.__elements:
+			mass += (element.ma * element.quantity)
+		return mass
